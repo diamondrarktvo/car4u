@@ -1882,6 +1882,18 @@ footer .row-1 .owner .language::after {
     margin-bottom: 90px;
 }
 
+.div-citation{
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 915px) {
+    .div-citation {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+
 .triple-win .list-triple-win .relation-triple {
     width: 384px;
     display: flex;
