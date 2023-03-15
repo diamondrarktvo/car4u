@@ -2040,6 +2040,7 @@ select.form-control {
     }
 }
 
+
 /* service */
 .content-service {
     display: grid;
@@ -2074,6 +2075,14 @@ select.form-control {
     display: block;
 }
 
+.content-service_iten_owner_is {
+    padding: 40px 0px;
+    margin: 0px 200px 120px 200px;
+    background-color: #fff;
+    position: relative;
+    top: -260px;
+}
+
 .content-service_iten_owner {
     padding: 40px 0px;
     margin: 0px 200px 120px 200px;
@@ -2084,7 +2093,9 @@ select.form-control {
 }
 
 @media (max-width: 767px) {
-    .content-service_iten_owner {
+
+    .content-service_iten_owner,
+    .content-service_iten_owner_is {
         padding: 50px 0;
         margin: 0px 20px 50px 20px;
     }
@@ -6210,6 +6221,7 @@ body .boxs-2.boxs-3 .boxs-2-table .left::after {
     background: rgba(7, 44, 54, 0.1);
     padding-bottom: 0;
 }
+
 
 .content-Renting.how-it .content-Renting_body_heading {
     margin-bottom: 5px;
