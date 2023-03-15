@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="sass/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <!-- Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
     <!-- My CSS -->
-    <link href="sass/style.css" rel="stylesheet" />
+    <link href="sass/my_account.css" rel="stylesheet" />
 
     <title>Car4you</title>
   </head>
@@ -30,13 +35,13 @@
           </li>
           <ul class="submenu">
             <li>
-              <a href="verification.html" class="current">Verification</a>
+              <a href="verification.html">Verification</a>
             </li>
             <li>
               <a href="profil.html">Profil</a>
             </li>
             <li>
-              <a href="identification.html">Identification</a>
+              <a href="identification.html" class="current">Identification</a>
             </li>
             <li>
               <a href="setting.html">settings</a>
@@ -121,7 +126,7 @@
             <button type="submit" class="search-btn">
               <i class="bx bx-search"></i>
             </button>
-            <input type="search" placeholder="Search or type" />
+            <input type="search" value="Search or type" />
           </div>
         </form>
         <div class="nav-content d-flex">
@@ -139,86 +144,104 @@
 
       <!-- MAIN -->
       <main>
-        <h1 class="link-h4 mb-5">Verification</h1>
-        <section class="box-verification">
-          <div class="box-verif-content">
-            <div class="box-verif-content-picture">
-              <img src="images/mobile.png" alt="mobile" />
-            </div>
-            <h2 class="box-verif-content-title">Mobile phone</h2>
-            <span>Ensure that you receive all messages and notifications.</span>
-            <div class="box-verif-footer">
-              <p>
-                Already confirmed number:<br />
-                +20-12-xxxx-xxxx
-              </p>
-            </div>
-          </div>
-          <div class="box-verif-content">
-            <div class="box-verif-content-picture">
-              <img src="images/mobile.png" alt="mobile" />
-            </div>
-            <h2 class="box-verif-content-title">Email Address</h2>
-            <span>Ensure that you receive all messages and notifications.</span>
-            <div class="box-verif-footer">
-              <p>
-                Already confirmed address:<br />
-                email@example.com
-              </p>
-            </div>
-          </div>
+        <h1 class="link-h4 mb-5">Identification</h1>
 
-          <div class="box-verif-content">
-            <div class="box-verif-content-picture">
-              <img src="images/picture.png" alt="mobile" />
-            </div>
-            <h2 class="box-verif-content-title">Picture</h2>
-            <span>Ensure that you receive all messages and notifications.</span>
-            <div class="box-verif-footer">
-              <a href="#" class="form-control buton buton-2">Upload image</a>
-            </div>
-          </div>
-
-          <div class="box-verif-content">
-            <div class="box-verif-content-picture">
-              <img src="images/social.png" alt="mobile" />
-            </div>
-            <h2 class="box-verif-content-title">Social Media</h2>
-            <span>Ensure that you receive all messages and notifications.</span>
-            <div class="box-verif-footer">
-              <a href="#" class="form-control buton buton-2">Verify</a>
-            </div>
-          </div>
-
-          <div class="box-verif-content">
-            <div class="box-verif-content-picture">
-              <img src="images/licence.png" alt="mobile" />
-            </div>
-            <h2 class="box-verif-content-title">Identification & licence</h2>
-            <span>Ensure that you receive all messages and notifications.</span>
-            <div class="box-verif-footer">
-              <a href="#" class="form-control buton buton-2"
-                >Proceed to identification</a
-              >
-            </div>
-          </div>
-
-          <div class="box-verif-content">
-            <div class="box-verif-content-picture">
-              <img src="images/trips.png" alt="mobile" />
-            </div>
-            <h2 class="box-verif-content-title">Tips</h2>
-            <span>Ensure that you receive all messages and notifications.</span>
-            <div class="box-verif-footer">
-              <a href="#" class="form-control buton buton-2">Manage my ads</a>
+        <section class="bg-white p-5 my-4 rounded rounded-5">
+          <h3 class="text-lg-start text-center">Driving licence</h3>
+          <p class="text-lg-start text-center fs-6 text-secondary">
+            This information is only shared once your booking is confirmed by an
+            owner.
+          </p>
+          <div>
+            <div class="row col-12">
+              <div class="col-md-4 col-12">
+                <label class="form-label fw-bold">Licence Number</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                  style="background-color: #f5f5f5"
+                  title="firstname"
+                  name="firstname"
+                  type="text"
+                  class="form-control py-4"
+                  value="458445754"
+                />
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Country of Obtention</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <select name="title" class="custom-select custom-select-lg">
+                  <option selected>Egypt</option>
+                  <option value="1">France</option>
+                  <option value="2">Mars</option>
+                </select>
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Date of birthday</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                  style="background-color: #f5f5f5"
+                  title="date"
+                  name="date"
+                  type="date"
+                  class="form-control py-4"
+                />
+              </div>
             </div>
           </div>
         </section>
+
+        <section class="bg-white p-5 my-4 rounded rounded-5">
+          <h3 class="text-lg-start text-center">Documents</h3>
+          <p class="text-lg-start text-center fs-6 text-secondary">
+            Take photos of documents required
+          </p>
+
+          <div class="file-upload">
+            <input type="file" id="file" class="file-input" />
+            <label for="file" class="file-label">
+              <img src="images/upload.png" alt="File Icon" class="file-icon" />
+              <span class="file-text fw-bold"
+                >click or drag photo of your identity card, Your driver
+                licence,your international driver licence.</span
+              >
+            </label>
+          </div>
+        </section>
+
+        <div class="d-flex flex-md-row flex-column justify-content-md-end mt-5">
+          <div class="mt-5 py-5">
+            <a href="#" class="form-control buton buton-2 px-4 py-4"
+              >Save changes</a
+            >
+          </div>
+        </div>
       </main>
       <!-- MAIN -->
     </section>
     <!-- CONTENT -->
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

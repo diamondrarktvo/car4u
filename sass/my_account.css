@@ -2338,6 +2338,49 @@ button.accordion.is-open {
     background: #1996B4;
 }
 
+.file-upload {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BABABA;
+    border: 1px dashed #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 355px) {
+    .file-upload {
+        height: auto;
+        width: auto;
+    }
+
+    .file-text {
+        margin-top: 0;
+        font-size: 10px;
+    }
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.file-text {
+    margin-top: 10px;
+}
+
 .reviews-section .list-reviews .cols a .fa-chevron-left {
     margin-right: 24px;
 }
