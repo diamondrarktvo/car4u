@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="sass/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link href="sass/my_account.css" rel="stylesheet" />
+
+    <title>Car4you</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand d-none d-md-flex">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+      <ul class="side-menu top">
+        <span class="level-menu active">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span class="text">My account</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="verification.html">Verification</a>
+            </li>
+            <li>
+              <a href="profil.html" class="current">Profil</a>
+            </li>
+            <li>
+              <a href="#">Settings</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-car"></i>
+              <span class="text">My cars</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="manage-listing.html">Manage listing</a>
+            </li>
+            <li>
+              <a href="">My availabilities</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-key"></i>
+              <span class="text">My rentals</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="as-a-renter.html">as a renter</a>
+            </li>
+            <li>
+              <a href="as-a-owner.html">as an owner</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-folder-minus"></i>
+              <span class="text">My payments</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="#">My income</a>
+            </li>
+            <li>
+              <a href="#">My payments</a>
+            </li>
+            <li>
+              <a href="#">My Credit cards</a>
+            </li>
+          </ul>
+        </span>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out-circle"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="d-flex d-md-none">
+          <a href="#" class="brand">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <i class="bx bx-menu"></i>
+        </div>
+        <form action="#">
+          <div class="form-input">
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+            <input type="search" value="Search or type" />
+          </div>
+        </form>
+        <div class="nav-content d-flex">
+          <a href="#" class="notification mr-1 mr-md-3 d-block">
+            <img src="images/notif.png" alt="notification" />
+            <span class="num"></span>
+          </a>
+          <a href="#" class="profile">
+            <img src="images/people.png" />
+          </a>
+          <span>Mr. Khaleed</span>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="link-h4 mb-5">Profil</h1>
+
+        <section
+          class="d-flex flex-lg-row align-items-lg-start flex-column bg-white p-5 my-4"
+        >
+          <div class="d-flex flex-lg-column flex-row justify-content-center">
+            <img alt="" src="images/picture.png" height="80" width="80" />
+          </div>
+          <div class="d-flex flex-column col-lg-10 col-12">
+            <h3 class="text-lg-start text-center">Picture</h3>
+            <p class="fs-6 text-secondary-emphasis text-lg-start text-center">
+              Le Lorem Ipsum est simplement du faux texte employé dans la
+              composition et la mise en page avant impression. Le Lorem Ipsum
+              est le faux texte standard de l'imprimerie depuis les années 1500,
+              quand un imprimeur anonyme assembla ensemble des morceaux de texte
+              pour réaliser un livre .
+            </p>
+            <div class="d-flex flex-lg-column flex-row justify-content-center">
+              <a href="#" class="form-control buton buton-2">Upload image</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white p-5 my-4 rounded rounded-5">
+          <h3 class="text-lg-start text-center">Information</h3>
+          <p class="text-lg-start text-center fs-6 text-secondary">
+            Please enter your Personal Informations
+          </p>
+          <div>
+            <div class="row col-12">
+              <div class="col-md-4 col-12">
+                <label class="form-label fw-bold">Title</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <select name="title" class="custom-select custom-select-lg">
+                  <option selected>Choice</option>
+                  <option value="1">Mr</option>
+                  <option value="2">Mme</option>
+                  <option value="3">Ms</option>
+                </select>
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >First Name</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                  style="background-color: #f5f5f5"
+                  title="firstname"
+                  name="firstname"
+                  type="text"
+                  class="form-control py-4"
+                  value="Mohamed"
+                />
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Last Name</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                  style="background-color: #f5f5f5"
+                  title="firstname"
+                  name="firstname"
+                  type="text"
+                  class="form-control py-4"
+                  value="Khaleed"
+                />
+              </div>
+            </div>
+
+            <div class="row col-12">
+              <div class="col-md-4 col-12">
+                <label class="form-label fw-bold">Date of birth</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  ><input
+                  style="background-color: #f5f5f5"
+                  title="firstname"
+                  name="firstname"
+                  type="date"
+                  class="form-control py-4"
+                />
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Your mobile number</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img alt="" src="images/flag.png" height="15" width="20" />
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control py-4" style="background-color: #F5F5F5;" aria-label="Your mobile number" value="06 52 30 22 10">
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Your fixed phone</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                  style="background-color: #f5f5f5"
+                  title="firstname"
+                  name="firstname"
+                  type="text"
+                  class="form-control py-4"
+                  value="06 52 30 22 10"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white p-5 my-4 rounded rounded-5">
+          <h3 class="text-lg-start text-center">Identity</h3>
+          <p class="text-lg-start text-center fs-6 text-secondary">
+            Lorem ipsum
+          </p>
+          <div class="row col-12">
+            <div class="col-md-4 col-12">
+                <label class="form-label fw-bold">Identity document</label
+                >
+                <select name="title" class="custom-select custom-select-lg">
+                    <option selected>Foreigners identity Number</option>
+                    <option value="1">test</option>
+                    <option value="2">test 2</option>
+                </select>
+            </div>
+            <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                    >Document number</label
+                >
+                <input
+                    style="background-color: #f5f5f5"
+                    title="firstname"
+                    name="firstname"
+                    type="text"
+                    class="form-control py-4"
+                    value="Document number"
+                />
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white p-5 my-4 rounded rounded-5">
+          <h3 class="text-lg-start text-center">Details</h3>
+          <p class="text-lg-start text-center fs-6 text-secondary">
+            Lorem ipsum
+          </p>
+          <div>
+            <div class="row col-12">
+              <div class="col-md-4 col-12">
+                <label class="form-label fw-bold">Address</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                    style="background-color: #f5f5f5"
+                    title="firstname"
+                    name="firstname"
+                    type="text"
+                    class="form-control py-4"
+                    value="Address"
+                />
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Complementary address (optional)</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: white"
+                  >*</span
+                >
+                <input
+                    style="background-color: #f5f5f5"
+                    title="firstname"
+                    name="firstname"
+                    type="text"
+                    class="form-control py-4"
+                    value="Complementary address"
+                />
+              </div>
+              <div class="col-md-4 col-12">
+                <label for="firstname" class="form-label fw-bold"
+                  >Post code</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span
+                >
+                <input
+                    style="background-color: #f5f5f5;"
+                    title="firstname"
+                    name="firstname"
+                    type="text"
+                    class="form-control py-4"
+                    value="Post code"
+                />
+              </div>
+            </div>
+
+            <div class="row col-12">
+              <div class="col-md-4">
+                <label class="form-label fw-bold">Town</label
+                ><span
+                  title="Champ obligatoire"
+                  class="asterix fs-5"
+                  style="color: red"
+                  >*</span>
+                  <input
+                    style="background-color: #f5f5f5"
+                    title="firstname"
+                    name="firstname"
+                    type="text"
+                    class="form-control py-4"
+                    value="Town"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="d-flex flex-md-row flex-column justify-content-md-end">
+            <div class="mr-2">
+              <a href="setting.html" class="form-control buton buton-setting px-5 py-3">Settings</a>
+            </div>
+            <div class="">
+              <a href="#" class="form-control buton buton-2 px-4 py-3">Save changes</a>
+            </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paiement</title>
+    <link rel="stylesheet" href="./sass/send.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+  </head>
+  <body style="background-color: #f4f6f5;">
+    <div class="row">
+      <header style="background-color: #ffffff; display: flex; flex-direction: row; justify-content: space-around;"">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./images/logo.png" alt="logo" srcset="" height="60" width="180" />
+          </a>
+        </div>
+
+        <div class="menus">
+          <nav>
+            <ul>
+              <li>
+                <a href="rent-my-car.html">Rent my car</a>
+              </li>
+              <li>
+                <a href="how-it-work.html">Help</a>
+              </li>
+              <li>
+                <a href="register.html">Sign up</a>
+              </li>
+              <li class="user">
+               <i class="fa-solid fa-user"></i><a
+                  href="login.html" style="margin-left: 5px;"
+                  >Log in</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="menus-hamburger">
+          <i class="fa-solid fa-bars fa-2x"></i>
+          <div class="menus-mobile">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+            <nav>
+              <ul>
+                <li>
+                  <a href="rent-my-car.php">Rent my car</a>
+                </li>
+                <li>
+                  <a href="step-1.html">Help</a>
+                </li>
+                <li>
+                  <a href="register.html">Sign up</a>
+                </li>
+                <li class="user">
+                  <a href="login.html">Log in</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- menus -->
+        </div>
+      </header>
+    </div>
+    <div class="container-md" style="background-color: #f4f6f5;">
+      <div class="row py-4" style="margin-left: 15px;">
+        <button
+          style="
+            font-size: 22px;
+            font-weight: 600;
+            color: #1996b4;
+            width: 10%;
+            border: none;
+            background-color: #f4f6f5;
+          "
+        >
+          <i class="fa-solid fa-arrow-left"></i> Return
+        </button>
+      </div>
+
+      <div class="d-flex flex-lg-row flex-column justify-content-around">
+        <div class="column my-lg-0 my-3">
+          <div style="width: auto; background-color: #ffffff;">
+            <div
+              class="d-flex flex-row justify-content-between align-items-end p-4"
+            >
+              <div>
+                <h3 style="font-weight: 600">Billing info</h3>
+                <p class="text-secondary" style="font-size: 14px">
+                  Please enter your billing info
+                </p>
+              </div>
+              <p class="text-secondary" style="font-size: 14px">Step 1 of 3</p>
+            </div>
+
+            <div class="row px-4 py-3">
+              <div class="column col-md-6">
+                <label class="form-label">First name</label>
+                 <input type="text" class="form-control" placeholder="Mohamed" aria-label="First name" aria-describedby="basic-addon1">
+              </div>
+              <div class="column col-md-6">
+                <label class="form-label">Last Name</label>
+                 <input type="text" class="form-control" placeholder="Khaled" aria-label="Last name" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="row px-4 py-3">
+                <div class="column col-md-6">
+                    <label class="form-label">Phone number</label>
+                    <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="column col-md-6">
+                    <label class="form-label">Town / City</label>
+                    <input type="text" class="form-control" placeholder="Town or city" aria-label="Town or city" aria-describedby="basic-addon1">
+                </div>
+            </div>
+          </div>
+
+          <div class="py-2 my-lg-2 my-0" style="height: auto; background-color: #ffffff">
+            <div
+              class="d-flex flex-row justify-content-between align-items-end p-4"
+            >
+              <div>
+                <h3 style="font-weight: 600">Payment methond</h3>
+                <p class="text-secondary" style="font-size: 14px">
+                  Please select your payment method
+                </p>
+              </div>
+              <p class="text-secondary" style="font-size: 14px">Step 2 of 3</p>
+            </div>
+
+            <div class="row px-4 py-3" style="background-color:- #f4f6f5">
+                <div class="d-flex flex-row justify-content-between align-items-center" style="margin-bottom: 20px;">
+                    <div class="column">
+                        <input type="radio" aria-label="Radio button for following text input">
+                        <label class="fw-bold">Credit card</label>
+                    </div>
+                    <div class="column">
+                        <img alt="" src="./images/visas.png" height="20" width="80" />
+                    </div>
+                </div>
+              <div class="column col-md-6">
+                <label class="form-label">Card number</label>
+                <input type="text" class="form-control" placeholder="Card number" aria-label="card number" aria-describedby="basic-addon1">
+              </div>
+              <div class="column col-md-6">
+                <label class="form-label">Expiration date</label>
+                <input type="date" class="form-control" placeholder="Expiration date" aria-label="Last name" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="row px-4 py-3">
+              <div class="column col-md-6">
+                <label class="form-label">Card holder</label>
+                <input type="text" class="form-control" placeholder="Card holder" aria-label="Card holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="column col-md-6">
+                <label class="form-label">CVC</label>
+                <input type="text" class="form-control" placeholder="CVC" aria-label="cvc">
+              </div>
+            </div>
+
+            <div class="row px-4 py-3">
+                <div class=" p-3 d-flex flex-row justify-content-between align-items-center" style="margin-bottom: 20px; background-color: #f4f6f5;">
+                    <div class="column">
+                        <input type="radio" aria-label="Radio button for following text input">
+                        <label class="fw-bold">Paypal</label>
+                    </div>
+                    <div class="column">
+                        <img alt="" src="./images/PayPal.png" height="30" width="120" />
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column rounded-3 my-lg-0 my-3" style="background-color: #ffffff;">
+            <div
+              class="column p-4"
+            >
+              <div>
+                <h3 style="font-weight: 600">Price summary</h3>
+                <p class="text-secondary" style="font-size: 14px">
+                  Price may change depending on the lenght of the rental an the price of your rental car
+                </p>
+              </div>
+
+              <div class="d-flex flex-row ">
+                 <div class="column">
+                      <img alt="image" src="./images/ford-focus.jpg" class=" rounded float-left img-ford" />
+                 </div>
+                  <div class="column" style="margin-left: 20px;">
+                      <h1 class="fs-4 fw-bold">FORD FOCUS</h1>
+                      <h1 class="fs-4 fw-bold">2017</h1>
+                      <div class="d-flex flex-row">
+                          <img alt="image" src="./images/star.jpg" height="20" width="20" />
+                          <img alt="image" src="./images/star.jpg" height="20" width="20" />
+                          <img alt="image" src="./images/star.jpg" height="20" width="20" />
+                          <img alt="image" src="./images/star.jpg" height="20" width="20" />
+                          <img alt="image" src="./images/star.jpg" height="20" width="20" />
+                          <p class="mx-3">444+ Reviewer </p>
+                      </div>
+                  </div>
+              </div>
+
+              <hr />
+
+              <div class="row my-5">
+                 <div class="d-flex flex-row justify-content-between">
+                    <p class="form-label" style="color: #90A3BF; font-size: 16px;">Subtotal</p>
+                    <p class="fw-bold">500 EGP</p>
+                 </div>
+
+                 <div class="d-flex flex-row justify-content-between">
+                    <p class="form-label" style="color: #90A3BF; font-size: 16px;">Service fees</p>
+                    <p class="fw-bold">10 %</p>
+                 </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Apply promo code" aria-label="Promo code" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary fw-bold" type="button">Apply now</button>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row justify-content-between my-4">
+                  <div class="column">
+                      <h2 class="fs-4 fw-bold">Total rental price</h2>
+                      <p class="text-secondary fs-6">Overall price and  includes  rental discount</p>
+                  </div>
+                  <div>
+                      <p class="fs-2 fw-bold">500 EGP</p>
+                  </div>
+              </div>
+
+              <hr />
+
+              <div class="column">
+                  <div class="column">
+                      <h2 class="fs-4 fw-bold">Calendar</h2>
+                      <p class="text-secondary fs-6">Summary of your journey</p>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-between">
+                      <p><i class="fa-regular fa-calendar" style="margin-right: 6px; color: #1996b4;"></i>Start of rental</p>
+                      <p class="fw-bold">15 Octobre 2022</p>
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-between">
+                      <p><i class="fa-regular fa-calendar" style="margin-right: 6px; color: #1996b4;"></i>Start of rental</p>
+                      <p class="fw-bold">15 Octobre 2022</p>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-around align-items-center rounded-3" style="background-color: #ffffff;">
+                <div class="row">
+                    <img alt="image" src="./images/security.png" width="100" height="50" />
+                </div>
+                <div class="column" style="width: 380px;">
+                    <h2 class="fs-6 fw-bold">Security deposit</h2>
+                    <p class="text-secondary fs-6" >The amount paid for the rental will be returned in full at the end of the agreed rental period.</p>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="py-3 my-lg-2 mx-lg-3 my-0 col-lg-6" style="height: auto; background-color: #ffffff">
+        <div
+            class="d-flex flex-row justify-content-between align-items-end p-4"
+        >
+            <div>
+                <h3 style="font-weight: 600;">Confirmation</h3>
+                <p class="text-secondary" style="font-size: 14px">
+                  We are getting to the end. Just few clicks and your  rental is ready.
+                </p>
+            </div>
+              <p class="text-secondary" style="font-size: 14px">Step 3 of 3</p>
+        </div>
+
+        <div class="row px-4 py-3">
+            <div class="column col-md-12" style="background-color: #f4f6f5; padding: 8px; margin: 4px 0px;">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+                <label class="form-label">I agree with sending newsletter emails</label>
+            </div>
+            <div class="column col-md-12"- style="background-color: #f4f6f5; padding: 8px; margin: 4px 0px;">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+                <label class="form-label">I agree with your terms and conditions and privacy policy.</label>
+            </div>
+        </div>
+        <button type="button" class="btn rounded-5 btn-lg" style="width: 206px; background-color: #1996b4; color: #ffffff; margin-left: 18px; margin-top: 26px; font-weight: bold;">Rent now</button>
+       
+        <div class="w-75 mx-md-2 d-flex flex-row justify-content-evenly align-items-start rounded-3" style=" margin-top: 20px; background-color: #ffffff;">
+                <div class="row">
+                    <img alt="image" src="./images/security.png" width="50" height="50" />
+                </div>
+                <div class="column">
+                    <h2 class="fs-6 fw-bold">All your data are safe</h2>
+                    <p class="text-secondary fs-6" >We are using the most  advanced security to provide  you the best experience ever.</p>
+                </div>
+        </div>
+        </div>
+    </div>
+        
+    </div>
+
+      <footer class="mt-5">
+        <div class="row-1">
+            <div class="car-u">
+                <div class="list-foot-menu-1">
+                    <img src="./images/logo.png"  alt="logo" srcset="">
+                    <a href="#">Who are we?</a>
+                    <a href="#">Join us</a>
+                    <a href="#">Press corner</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="owner">
+                <p>
+                    Owner
+                </p>
+
+                <div class="list-foot-owner">
+                    <a href="#">Why rent your car?</a>
+                    <a href="insurance.html">Insurance</a>
+                    <a href="#">Your rental experience</a>
+                    <a href="#">Tips</a>
+                    <a href="#">Professionals</a>
+                </div>
+            </div>
+
+
+            <div class="owner renter">
+                <p>
+                    Renter
+                </p>
+
+                <div class="list-foot-owner">
+                    <a href="#">Rental Experience</a>
+                    <a href="insurance.html">Insurance</a>
+                    <a href="#">Tips</a>
+                </div>
+            </div>
+
+            <div class="owner help">
+                <p>
+                    Help
+                </p>
+
+                <div class="list-foot-owner">
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact us</a>
+                </div>
+
+                <div class="language">
+                    <select title="town" name="town" class="fa">
+                        <option>&#xf0ac; <span>English</span> </option>
+                        <option>&#xf0ac; French </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <div class="copyright">
+                <div class="car-4-u">
+                    <p>
+                        © Car4U, Inc. All rights reserved.
+                    </p>
+                    <p>
+                        Privacy Policy ・
+                    </p>
+                </div>
+                <div class="car-4-u">
+                    <p>
+                        CGU ・
+                    </p>
+                    <p>
+                        CPU ・
+                    </p>
+                    <p>
+                        Legal Notice ・
+                    </p>
+                    <p>
+                        Cookie Policy
+                    </p>
+                </div>
+            </div>
+            <div class="google-play"> 
+                <img src="./images/google-play.png" alt=""  width="120" height="50">
+                <img src="./images/app-store.png" alt=""  width="120" height="50">
+            </div>
+        </div>
+
+        <div class="row-3">
+            <div class="logo-visa">
+                <img src="./images/visa.png" alt="" width="50" height="50">
+                <img src="./images/mastercard.png" alt="" width="50" height="50">
+                <img src="./images/ob.png" alt="" width="50" height="50">
+            </div>
+            
+            <div class="car-rental-egypt">
+                <p>
+                    Car rental in Egypt - 
+                </p>
+                <p>
+                    Car rental in Assouan -
+                </p>
+                <p>
+                    Car rental in hurghada -
+                </p>
+                <p>
+                    Car rental in gizeh -
+                </p>
+                <p>
+                Car rental in 6 Octobre...
+                </p>
+            </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link href="sass/style.css" rel="stylesheet">
+
+	<title>Car4you</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand d-none d-md-flex">
+			<img src="images/logo.svg" alt="logo">
+		</a>
+		<ul class="side-menu top admin">
+			<span class="level-menu active">
+				<li class="side-menu-top">
+					<a href="#">
+						<i class='bx bxs-dashboard' ></i>
+						<span class="text">Dashboard</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="locataire.html">
+						<span class="text">Renters</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Owners</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Brands / Model</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Car Types</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Car Listing</span>
+					</a>
+				</li>
+			</span>
+			<hr>
+			<span class="raport">Report</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Payment Details</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Transactions</span>
+					</a>
+				</li>
+			</span>
+			<span class="level-menu">
+				<li class="side-menu-top">
+					<a href="#">
+						<span class="text">Car Report</span>
+					</a>
+				</li>
+			</span>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<div class="d-flex d-md-none">
+				<a href="#" class="brand">
+					<img src="images/logo.svg" alt="logo">
+				</a>
+				<i class='bx bx-menu' ></i>
+			</div>
+			<form action="#">
+				<div class="form-input">
+                    <button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+					<input type="search" placeholder="Search or type">
+				</div>
+			</form>
+			<div class="nav-content d-flex">
+				<a href="#" class="notification mr-1 mr-md-3 d-block">
+					<img src="images/notif.png" alt="notification">
+					<span class="num"></span>
+				</a>
+				<a href="#" class="profile">
+					<img src="images/people.png">
+				</a>
+				<span>Administrator</span>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<h1 class="link-h4">Dashboard</h1>
+
+			<section class="box-dashboard mt-4 mb-5">
+				<div class="content-box-dash">
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">Total Renters</span>
+								<span class="chiffre">2.000</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/group.png" alt="car4jou">
+							</div>
+						</div>
+						<div class="content-box-dash-box-2">
+							<span>Today : 5 </span>
+							<span>This month : 50</span>
+						</div>
+					</div>
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">Total Owners</span>
+								<span class="chiffre">50</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/personne.png" alt="car4jou">
+							</div>
+						</div>
+						<div class="content-box-dash-box-2">
+							<span>Today : 5 </span>
+							<span>This month : 50</span>
+						</div>
+					</div>
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">Total Owners</span>
+								<span class="chiffre">60</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/car-round.png" alt="car4jou">
+							</div>
+						</div>
+						<div class="content-box-dash-box-2">
+							<span>Today : 5 </span>
+							<span>This month : 50</span>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<section class="box-table">
+				<div class="box-table-heading">
+					<span class="box-table-heading-title">Latest Renters status</span>
+					<div class="box-table-heading-filter">
+						<button>Filter</button>
+						<ul class="box-filter">
+							<li>Status</li>
+							<li>Date</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+							  <th>No.</th>
+							  <th>Licence</th>
+							  <th>Driver</th>
+							  <th>Status</th>
+							  <th>Price</th>
+							  <th>Date</th>
+							  <th colspan="3"></th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>01</td>
+							  <td>0223</td>
+							  <td>
+								<span class="box-driver">
+									<img src="images/alex.png" alt="img-table">
+									<span>Alex Noman</span>
+								</span>
+							  </td>
+							  <td>
+								<span class="box-status completed">Completed</span>
+							  </td>
+							  <td>$ 35.44</td>
+							  <td>11-02-2022</td>
+							  <td colspan="3"><button class="details-btn">Details</button></td>
+							</tr>
+							<tr>
+							  <td>02</td>
+							  <td>5665</td>
+							  <td>
+								<span class="box-driver">
+									<img src="images/razib.png" alt="img-table">
+									<span>Razib Rahman</span>
+								</span>
+							  </td>
+							  <td>
+								<span class="box-status pending">Pending</span>
+							  </td>
+							  <td>$ 20.00</td>
+							  <td>11-02-2022</td>
+							  <td colspan="3"><button class="details-btn">Details</button></td>
+							</tr>
+							<tr>
+							  <td>03</td>
+							  <td>1755</td>
+							  <td>
+								<span class="box-driver">
+									<img src="images/luke.png" alt="img-table">
+									<span>Luke Norton</span>
+								</span>
+							  </td>
+							  <td>
+								<span class="box-status in-route">In route</span>
+							  </td>
+							  <td>$ 23.50</td>
+							  <td>11-02-2022</td>
+							  <td colspan="3"><button class="details-btn">Details</button></td>
+							</tr>
+						  </tbody>
+					</table>
+				  </div>
+
+			</section>
+			<section class="box-table">
+				<div class="box-table-heading">
+					<span class="box-table-heading-title">Latest Owners status</span>
+					<div class="box-table-heading-filter">
+						<button>Filter</button>
+						<ul class="box-filter">
+							<li>Status</li>
+							<li>Date</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+							  <th>No.</th>
+							  <th>Licence</th>
+							  <th>Driver</th>
+							  <th>Status</th>
+							  <th>Price</th>
+							  <th>Date</th>
+							  <th colspan="3"></th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>01</td>
+							  <td>0223</td>
+							  <td>
+								<span class="box-driver">
+									<img src="images/alex.png" alt="img-table">
+									<span>Alex Noman</span>
+								</span>
+							  </td>
+							  <td>
+								<span class="box-status completed">Completed</span>
+							  </td>
+							  <td>$ 35.44</td>
+							  <td>11-02-2022</td>
+							  <td colspan="3"><button class="details-btn">Details</button></td>
+							</tr>
+							<tr>
+							  <td>02</td>
+							  <td>5665</td>
+							  <td>
+								<span class="box-driver">
+									<img src="images/razib.png" alt="img-table">
+									<span>Razib Rahman</span>
+								</span>
+							  </td>
+							  <td>
+								<span class="box-status pending">Pending</span>
+							  </td>
+							  <td>$ 20.00</td>
+							  <td>11-02-2022</td>
+							  <td colspan="3"><button class="details-btn">Details</button></td>
+							</tr>
+							<tr>
+							  <td>03</td>
+							  <td>1755</td>
+							  <td>
+								<span class="box-driver">
+									<img src="images/luke.png" alt="img-table">
+									<span>Luke Norton</span>
+								</span>
+							  </td>
+							  <td>
+								<span class="box-status in-route">In route</span>
+							  </td>
+							  <td>$ 23.50</td>
+							  <td>11-02-2022</td>
+							  <td colspan="3"><button class="details-btn">Details</button></td>
+							</tr>
+						  </tbody>
+					</table>
+				  </div>
+
+			</section>
+			<section class="box-dashboard mt-4 mb-5">
+				<div class="content-box-dash content-box-dashs">
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">50 users</span>
+								<span class="chiffre">60%</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/fb-round.png" alt="car4jou">
+							</div>
+						</div>
+					</div>
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">6 users</span>
+								<span class="chiffre">1%</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/apple.png" alt="car4jou">
+							</div>
+						</div>
+					</div>
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">2 users</span>
+								<span class="chiffre">0.5%</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/twiter-round.png" alt="car4jou">
+							</div>
+						</div>
+					</div>
+					<div class="content-box-dash-box">
+						<div class="content-box-dash-box-1">
+							<div class="content-box-dash-box-text">
+								<span class="title">30 users</span>
+								<span class="chiffre">40%</span>
+							</div>
+							<div class="content-box-dash-box-img">
+								<img src="images/envelop.png" alt="car4jou">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+	<script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link href="sass/style.css" rel="stylesheet" />
+
+    <title>Car4you</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand d-none d-md-flex">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+      <ul class="side-menu top">
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span class="text">My account</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="verification.html">Verification</a>
+            </li>
+            <li>
+              <a href="profil.html">Profil</a>
+            </li>
+            <li>
+              <a href="#">Settings</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu active">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-car"></i>
+              <span class="text">My cars</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="manage-listing.html" class="current">Manage listing</a>
+            </li>
+            <li>
+              <a href="">My availabilities</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-key"></i>
+              <span class="text">My rentals</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="as-a-renter.html">as a renter</a>
+            </li>
+            <li>
+              <a href="as-a-owner.html">as an owner</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-folder-minus"></i>
+              <span class="text">My payments</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="my-income.html">My income</a>
+            </li>
+            <li>
+              <a href="#">My payments</a>
+            </li>
+            <li>
+              <a href="#">My Credit cards</a>
+            </li>
+          </ul>
+        </span>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out-circle"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="d-flex d-md-none">
+          <a href="#" class="brand">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <i class="bx bx-menu"></i>
+        </div>
+        <form action="#">
+          <div class="form-input">
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+            <input type="search" placeholder="Search or type" />
+          </div>
+        </form>
+        <div class="nav-content d-flex">
+          <a href="#" class="notification mr-1 mr-md-3 d-block">
+            <img src="images/notif.png" alt="notification" />
+            <span class="num"></span>
+          </a>
+          <a href="#" class="profile">
+            <img src="images/people.png" />
+          </a>
+          <span>Mr. Khaleed</span>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="link-h4">Manage my listings</h1>
+        <div class="admin-heading">
+          <div>
+            <div class="admin-headings">
+              <img src="images/Union.png" alt="infos" />
+              <div class="admin-heading-content">
+                <h2 class="title-h2Ad">
+                  Don't forget to enter your availability !
+                </h2>
+                <p>
+                  Please indicate your preferred times for key drop-off and
+                  vehicle return on the "Manage my Availability" page.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="admin-heading-boutton">
+            <a href="#" class="buton">My availabilities</a>
+          </div>
+        </div>
+        <div class="admin-heading-bouttons d-flex">
+          <select class="form-control buton buton-1">
+            <option selected>All my listing</option>
+          </select>
+          <a href="#" class="form-control buton buton-2"> + Add a new car </a>
+        </div>
+        <section class="content-car">
+          <div class="car-items">
+            <div class="car-items-content">
+              <div class="car-items-content-picture">
+                <img src="images/cars.png" alt="car" />
+              </div>
+              <div class="car-items-content-body">
+                <span class="car-items-content-body_title">
+                  <img src="images/pending.png" alt="car" />
+                  Pending for validation
+                </span>
+                <h3>Ford Focus 2017</h3>
+                <span class="car-items-content-body_adresse"
+                  >ABS251CF 19 rue duc, Paris</span
+                >
+                <span class="car-items-content-body_day"
+                  >200 EGP <span>/ day</span></span
+                >
+                <div class="car-items-content-body_bouton">
+                  <a href="#" class="form-control buton buton-2">Edit</a>
+                  <a href="#" class="form-control buton">
+                    Activate instant reservation
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="car-items-calendar">
+              <div class="car-items-calendar-image">
+                <div class="content-calandar content-calandar-left">
+                  <div id="cal"></div>
+                </div>
+              </div>
+              <div class="car-items-calendar-body">
+                <div class="ckeboxs">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                        checked
+                      /><span>all days available</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                        checked
+                      /><span>Weekends available</span>
+                    </label>
+                  </div>
+                </div>
+                <a href="#" class="buton-3">Edit Calendar</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-items">
+            <div class="car-items-content">
+              <div class="car-items-content-picture">
+                <img src="images/cars.png" alt="car" />
+              </div>
+              <div class="car-items-content-body">
+                <span class="car-items-content-body_title">
+                  <img src="images/pending.png" alt="car" />
+                  Pending for validation
+                </span>
+                <h3>Ford Focus 2017</h3>
+                <span class="car-items-content-body_adresse"
+                  >ABS251CF 19 rue duc, Paris</span
+                >
+                <span class="car-items-content-body_day"
+                  >200 EGP <span>/ day</span></span
+                >
+                <div class="car-items-content-body_bouton">
+                  <a href="#" class="form-control buton buton-2">Edit</a>
+                  <a href="#" class="form-control buton">
+                    Activate instant reservation
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="car-items-calendar">
+              <div class="car-items-calendar-image">
+                <div class="content-calandar content-calandar-left">
+                  <div id="cal1"></div>
+                </div>
+              </div>
+              <div class="car-items-calendar-body">
+                <div class="ckeboxs">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                        checked
+                      /><span>all days available</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                        checked
+                      /><span>Weekends available</span>
+                    </label>
+                  </div>
+                </div>
+                <a href="#" class="buton-3">Edit Calendar</a>
+              </div>
+            </div>
+          </div>
+          <div class="car-items">
+            <div class="car-items-content">
+              <div class="car-items-content-picture">
+                <img src="images/cars.png" alt="car" />
+              </div>
+              <div class="car-items-content-body">
+                <span class="car-items-content-body_title">
+                  <img src="images/pending.png" alt="car" />
+                  Pending for validation
+                </span>
+                <h3>Ford Focus 2017</h3>
+                <span class="car-items-content-body_adresse"
+                  >ABS251CF 19 rue duc, Paris</span
+                >
+                <span class="car-items-content-body_day"
+                  >200 EGP <span>/ day</span></span
+                >
+                <div class="car-items-content-body_bouton">
+                  <a href="#" class="form-control buton buton-2">Edit</a>
+                  <a href="#" class="form-control buton">
+                    Activate instant reservation
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="car-items-calendar">
+              <div class="car-items-calendar-image">
+                <div class="content-calandar content-calandar-left">
+                  <div id="cal2"></div>
+                </div>
+              </div>
+              <div class="car-items-calendar-body">
+                <div class="ckeboxs">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                        checked
+                      /><span>all days available</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                        checked
+                      /><span>Weekends available</span>
+                    </label>
+                  </div>
+                </div>
+                <a href="#" class="buton-3">Edit Calendar</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

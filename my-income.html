@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link href="sass/style.css" rel="stylesheet" />
+
+    <title>Car4you</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand d-none d-md-flex">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+      <ul class="side-menu top">
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span class="text">My account</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="verification.html">Verification</a>
+            </li>
+            <li>
+              <a href="profil.html">Profil</a>
+            </li>
+            <li>
+              <a href="#">Settings</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-car"></i>
+              <span class="text">My cars</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="manage-listing.html">Manage listing</a>
+            </li>
+            <li>
+              <a href="">My availabilities</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-key"></i>
+              <span class="text">My rentals</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="as-a-renter.html">as a renter</a>
+            </li>
+            <li>
+              <a href="as-a-owner.html" class="current">as an owner</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu active">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-folder-minus"></i>
+              <span class="text">My payments</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="my-income.html" class="current">My income</a>
+            </li>
+            <li>
+              <a href="#">My payments</a>
+            </li>
+            <li>
+              <a href="#">My Credit cards</a>
+            </li>
+          </ul>
+        </span>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out-circle"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="d-flex d-md-none">
+          <a href="#" class="brand">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <i class="bx bx-menu"></i>
+        </div>
+        <form action="#">
+          <div class="form-input">
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+            <input type="search" placeholder="Search or type" />
+          </div>
+        </form>
+        <div class="nav-content d-flex">
+          <a href="#" class="notification mr-1 mr-md-3 d-block">
+            <img src="images/notif.png" alt="notification" />
+            <span class="num"></span>
+          </a>
+          <a href="#" class="profile">
+            <img src="images/people.png" />
+          </a>
+          <span>Mr. Khaleed</span>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="link-h4">My incomes</h1>
+        <div class="admin-heading-bouttons mt-4">
+          <select class="buton buton-4 mb-4">
+            <option selected>My 2022 earning</option>
+          </select>
+        </div>
+
+        <section class="box-graphe">
+          <img src="images/graph.png" alt="my-income" />
+        </section>
+        <section class="box-table">
+          <div class="box-table-heading">
+            <span class="box-table-heading-title">Incomes list</span>
+            <div class="box-table-heading-filter">
+              <button>Filter</button>
+              <ul class="box-filter">
+                <li>Status</li>
+                <li>Date</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Licence</th>
+                  <th>Driver</th>
+                  <th>Status</th>
+                  <th>Price</th>
+                  <th>Date</th>
+                  <th colspan="3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>0223</td>
+                  <td>
+                    <span class="box-driver">
+                      <img src="images/alex.png" alt="img-table" />
+                      <span>Alex Noman</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="box-status completed">Completed</span>
+                  </td>
+                  <td>$ 35.44</td>
+                  <td>11-02-2022</td>
+                  <td colspan="3">
+                    <button class="details-btn">Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>5665</td>
+                  <td>
+                    <span class="box-driver">
+                      <img src="images/razib.png" alt="img-table" />
+                      <span>Razib Rahman</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="box-status pending">Pending</span>
+                  </td>
+                  <td>$ 20.00</td>
+                  <td>11-02-2022</td>
+                  <td colspan="3">
+                    <button class="details-btn">Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>1755</td>
+                  <td>
+                    <span class="box-driver">
+                      <img src="images/luke.png" alt="img-table" />
+                      <span>Luke Norton</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="box-status in-route">In route</span>
+                  </td>
+                  <td>$ 23.50</td>
+                  <td>11-02-2022</td>
+                  <td colspan="3">
+                    <button class="details-btn">Details</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

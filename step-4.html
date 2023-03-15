@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Car4you</title>
+  <link href="fonts/css/all.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/animations.css" type="text/css">
+  <link href="sass/style.css" rel="stylesheet">
+  <link rel="icon" href="images/icon5.png" type="image/png" sizes="30x30">
+  <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="fontawesome/css/brands.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+  <script>
+    $(document).ready(function () {
+      $("#sticker").sticky({
+        topSpacing: 0,
+      });
+    });
+  </script>
+</head>
+<header id="sticker">
+  <div class="container header-content">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="logo" srcset="">
+       </a>
+      </div>
+
+      <div class="menus">
+          <nav>
+              <ul>
+                  <li>
+                      <a href="rent-my-car.html">Rent my car</a>
+                  </li>
+                  <li>
+                      <a href="#">Help</a>
+                  </li>
+                  <li>
+                      <a href="register.html">Sign up</a>
+                  </li>
+                  <li class="user">
+                      <img src="images/user.png" alt="" srcset=""><a href="login.html">Log in</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+
+      <div class="menus-hamburger">
+          <i class="fa-solid fa-bars fa-2x"></i>
+          <div class="menus-mobile">
+              <i class="fa-solid fa-xmark fa-2x"></i>
+              <nav>
+                  <ul>
+                      <li>
+                          <a href="rent-my-car.php">Rent my car</a>
+                      </li>
+                      <li>
+                          <a href="step-1.html">Help</a>
+                      </li>
+                      <li>
+                          <a href="register.html">Sign up</a>
+                      </li>
+                      <li class="user">
+                          <a href="login.html">Log in</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div> <!-- menus -->
+      </div>
+  </div>
+</header>
+<section class="content-step">
+    <div class="container">
+        <div class="content-step_headding">
+            <i class="fa-regular fa-arrow-left"></i>
+            <a href="#">Retour</a>
+        </div>
+        <div class="content-step-box">
+            <div class="content-step-box_step">
+                <div class="content-step-box_step_box">
+                    <span class="content-step-box_step_box_num">1</span>
+                    <span class="content-step-box_step_box_tex">Basic information</span>
+                </div>
+                <div class="content-step-box_step_box ">
+                    <span class="content-step-box_step_box_num">2</span>
+                    <span class="content-step-box_step_box_tex">Insurance info</span>
+                </div>
+                <div class="content-step-box_step_box">
+                    <span class="content-step-box_step_box_num">3</span>
+                    <span class="content-step-box_step_box_tex">Address</span>
+                </div>
+                <div class="content-step-box_step_box active">
+                    <span class="content-step-box_step_box_num">4</span>
+                    <span class="content-step-box_step_box_tex">Description</span>
+                </div>
+                <div class="content-step-box_step_box">
+                    <span class="content-step-box_step_box_num">5</span>
+                    <span class="content-step-box_step_box_tex">Calendar</span>
+                </div>
+                <div class="content-step-box_step_box">
+                    <span class="content-step-box_step_box_num">6</span>
+                    <span class="content-step-box_step_box_tex">Rental price</span>
+                </div>
+                <div class="content-step-box_step_box box-end">
+                    <span class="content-step-box_step_box_num">7</span>
+                    <span class="content-step-box_step_box_tex">My profile</span>
+                </div>
+            </div>
+
+            <div class="content-step-heading text-center">
+                <h1 class="link-h2">Describe your vehicle to the renters</h1>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+                </br>Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+            </div>
+            <div class="content-step-form content-step-4">
+                <form>
+                    <div class="form-ros">
+                        <div class="form-group">
+                            <label for="inputState">Describe</label>
+                            <textarea name="" id="" rows="4" placeholder="describe your vehicle here in as much detail as possible ..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-heading">
+                        <label for="inputState">Equipements</label>
+                    </div>
+                    <div class="d-flex box-form-check">
+                        <div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">ABS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">GPS
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Child seat
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Roof Box
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Air conditioning
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Cruise control
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-heading mt-5">
+                        <label for="inputState">More Options</label>
+                        
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Animals accepted
+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Smokers accepted
+                        </label>
+                    </div>
+                    
+                   
+                    <div class="content-step-nav mt-5">
+                        <a href="step-3.html" class="btn-primary back">Previous</a>
+                        <a href="step-5.html" class="btn-primary">Next</a>
+                    </div>
+                    <div class="content-step-decription">
+                        <p>Car4U implements an accessible confidential policy here. Car4U, as a treatment supplier, is called on to manage data in order to create, access member space, passeword management, ads management, business and payment management, customer relationship management, after sales service, operational management, litigation management, anti fraud control, commercial prospecting, marketing and statistic analysis, customer satisfaction measures. The data indicated with an asterisc are required. Without it, the management of your requests or operations could be delayed or impossible. You dispose of a right to interrogate, access, oppose for rightful reasons regarding your data, as well as a right oppose commercial prospecting. Besides, you dispose of a right to give specific and general guidelines regarding the post mortem saving, the suppression, and communication of your data. You can exercise them by sending an email to the following address contact@Car4U.com or by regular mail at the following address : 
+                            9 rue du 4 septembre 75002 Paris, with a copy of an identity document enclosed.</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+
+
+<footer>
+  <div class="row-1">
+      <div class="car-u">
+          <div class="list-foot-menu-1">
+              <img src="images/logo.svg" alt="logo" srcset="">
+              <a href="#">Who are we?</a>
+              <a href="#">Join us</a>
+              <a href="#">Press corner</a>
+              <a href="#">Blog</a>
+          </div>
+          <div class="social-media">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+
+      <div class="owner">
+          <p>
+              Owner
+          </p>
+
+          <div class="list-foot-owner">
+              <a href="#">Why rent your car?</a>
+              <a href="insurance.html">Insurance</a>
+              <a href="#">Your rental experience</a>
+              <a href="#">Tips</a>
+              <a href="#">Professionals</a>
+          </div>
+      </div>
+
+
+      <div class="owner renter">
+          <p>
+              Renter
+          </p>
+
+          <div class="list-foot-owner">
+              <a href="#">Rental Experience</a>
+              <a href="insurance.html">Insurance</a>
+              <a href="#">Tips</a>
+          </div>
+      </div>
+
+
+      <div class="owner help">
+          <p>
+              Help
+          </p>
+
+          <div class="list-foot-owner">
+              <a href="#">FAQ</a>
+              <a href="#">Contact us</a>
+          </div>
+
+          <div class="language">
+              <select name="town" class="fa">
+                  <option>&#xf0ac; <span>English</span> </option>
+                  <option>&#xf0ac; French </option>
+              </select>
+          </div>
+      </div>
+  </div>
+
+  <div class="row-2">
+      <div class="copyright">
+          <div class="car-4-u">
+              <p>
+                  © Car4U, Inc. All rights reserved.
+              </p>
+              <p>
+                  Privacy Policy ・
+              </p>
+          </div>
+          <div class="car-4-u">
+              <p>
+                  CGU ・
+              </p>
+              <p>
+                  CPU ・
+              </p>
+              <p>
+                  Legal Notice ・
+              </p>
+              <p>
+                  Cookie Policy
+              </p>
+          </div>
+      </div>
+      <div class="google-play"> 
+          <img src="images/google-play.png" alt="" srcset="">
+          <img src="images/app-store.png" alt="" srcset="">
+      </div>
+  </div>
+
+  <div class="row-3">
+      <div class="logo-visa">
+          <img src="images/mastercard.png" alt="" srcset="">
+          <img src="images/visa.png" alt="" srcset="">
+          <img src="images/ob.png" alt="" srcset="">
+      </div>
+      
+      <div class="car-rental-egypt">
+          <p>
+              Car rental in Egypt - 
+          </p>
+          <p>
+             Car rental in Assouan -
+          </p>
+          <p>
+              Car rental in hurghada -
+          </p>
+          <p>
+            Car rental in gizeh -
+          </p>
+          <p>
+           Car rental in 6 Octobre...
+          </p>
+      </div>
+  </div>
+</footer>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/pagescroll.js"></script>
+  <script src="js/css3-animate-it.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
