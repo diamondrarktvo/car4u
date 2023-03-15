@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+    <link href="sass/my_account.css" rel="stylesheet" />
+
+    <title>Car4you</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand d-none d-md-flex">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+      <ul class="side-menu top">
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span class="text">My account</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="verification.html">Verification</a>
+            </li>
+            <li>
+              <a href="profil.html">Profil</a>
+            </li>
+            <li>
+              <a href="identification.html">Identification</a>
+            </li>
+            <li>
+              <a href="setting.html">settings</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu active">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-car"></i>
+              <span class="text">My cars</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="manage-listing.html">Manage listing</a>
+            </li>
+            <li>
+              <a href="availabilities.html" class="current"
+                >My availabilities</a
+              >
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-key"></i>
+              <span class="text">My rentals</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="as-a-renter.html">as a renter</a>
+            </li>
+            <li>
+              <a href="as-a-owner.html">as an owner</a>
+            </li>
+          </ul>
+        </span>
+        <span class="level-menu">
+          <li class="side-menu-top">
+            <a href="#">
+              <i class="bx bxs-folder-minus"></i>
+              <span class="text">My payments</span>
+            </a>
+          </li>
+          <ul class="submenu">
+            <li>
+              <a href="my-income.html">My income</a>
+            </li>
+            <li>
+              <a href="#">My payments</a>
+            </li>
+            <li>
+              <a href="#">My Credit cards</a>
+            </li>
+          </ul>
+        </span>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out-circle"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="d-flex d-md-none">
+          <a href="#" class="brand">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <i class="bx bx-menu"></i>
+        </div>
+        <form action="#">
+          <div class="form-input">
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+            <input type="search" placeholder="Search or type" />
+          </div>
+        </form>
+        <div class="nav-content d-flex">
+          <a href="#" class="notification mr-1 mr-md-3 d-block">
+            <img src="images/notif.png" alt="notification" />
+            <span class="num"></span>
+          </a>
+          <a href="#" class="profile">
+            <img src="images/people.png" />
+          </a>
+          <span>Mr. Khaleed</span>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="link-h4">My availabilities</h1>
+
+        <section class="my-4 rounded rounded-4">
+          <div class="accordion-box px-5 pt-4">
+            <div class="accordion border-bottom mx-4">
+              <h4 class="text-lg-start text-center test accordion">
+                Keys handover hours
+              </h4>
+              <p class="text-lg-start text-center fs-6 text-secondary">
+                Lorem ipsum
+              </p>
+            </div>
+            <div class="accordion-content d-flex flex-column mt-1">
+              <div
+                class="form-check form-switch mt-5 d-flex flex-column justify-content-between"
+              >
+                <input
+                  class="form-check-input"
+                  style="width: 80px; height: 40px"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckChecked"
+                  style="margin-left: 60px"
+                  >Tous les jours</label
+                >
+              </div>
+
+              <div class="mt-5 mx-2 mb-3">
+                <a href="#" class="form-control buton buton-2 px-5 py-4 fw-bold"
+                  >Save my availabilities</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="my-4 rounded rounded-4">
+          <div class="accordion-box px-5 pt-4">
+            <div class="accordion border-bottom mx-4">
+              <h4 class="text-lg-start text-center test accordion">
+                Are you absent
+              </h4>
+              <p class="text-lg-start text-center fs-6 text-secondary">
+                Lorem ipsum
+              </p>
+            </div>
+            <div class="accordion-content d-flex flex-column mt-1">
+              <div class="mt-5 d-flex flex-row align-items-center">
+                <img
+                  alt=""
+                  src="images/plasi.png"
+                  height="30"
+                  width="30"
+                  style="
+                    background-color: rgba(25, 150, 180, 0.1);
+                    padding: 10px;
+                    border-radius: 20px;
+                  "
+                />
+                <label class="fs-4 fw-bold" style="margin-left: 10px"
+                  >Add an unavailability</label
+                >
+              </div>
+
+              <div class="mt-5 mx-2 mb-3">
+                <a href="#" class="form-control buton buton-2 px-5 py-4 fw-bold"
+                  >Save my unavailabilities</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
