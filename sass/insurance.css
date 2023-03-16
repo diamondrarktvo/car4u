@@ -1882,7 +1882,7 @@ footer .row-1 .owner .language::after {
     margin-bottom: 90px;
 }
 
-.div-citation{
+.div-citation {
     margin-left: 150px;
 }
 
@@ -2093,6 +2093,19 @@ select.form-control {
     background-color: #fff;
     position: relative;
     top: -260px;
+}
+
+.img-caroussel {
+    width: 250px;
+    margin: 0px 5px;
+    height: 450px;
+}
+
+@media (max-width: 800px) {
+    .img-caroussel {
+        height: 400px;
+        width: auto;
+    }
 }
 
 .content-service_iten_owner {
