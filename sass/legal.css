@@ -3905,6 +3905,16 @@ select.form-control.buton-1 option,
     }
 }
 
+.menu-droite {
+    height: 100px;
+}
+
+@media (max-width: 1000px) {
+    .menu-droite {
+        height: auto;
+    }
+}
+
 @media (max-width: 1511px) {
     .car-items {
         -moz-column-gap: 10px;
