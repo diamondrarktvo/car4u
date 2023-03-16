@@ -1964,6 +1964,13 @@ footer .row-1 .owner .language::after {
     position: relative;
 }
 
+.content-help {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: flex-end;
+}
+
 .content-Renting_body_left .btn {
     position: absolute;
     margin-top: -35px;
@@ -2149,6 +2156,18 @@ select.form-control {
     display: flex;
     justify-content: end;
     flex-direction: column;
+}
+
+.helping {
+    background-image: url('../images/call_center.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+}
+
+@media (max-width: 1000px) {
+
+    .helping {}
 }
 
 .content-axa_box p {
