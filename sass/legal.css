@@ -3588,16 +3588,6 @@ ul {
     }
 }
 
-#content nav::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: -40px;
-    left: 0;
-    border-radius: 50%;
-    box-shadow: -20px -20px 0 var(--light);
-}
 
 #content nav .bx.bx-menu {
     cursor: pointer;
