@@ -861,6 +861,7 @@ footer .row-3 .car-rental-egypt {
     justify-content: center;
     gap: 2px;
     font-size: 16px;
+    font-weight: 400;
     font-family: "Lato", sans-serif;
     color: #AFB0B2;
 }
@@ -2012,14 +2013,27 @@ footer .row-1 .owner .language::after {
     margin-bottom: 35px;
 }
 
+.content-Renting_body_heading h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
 .content-Renting_body_heading span {
-    font-size: 28px;
+    display: block;
+    margin-top: 25px;
+    font-size: 22px;
     line-height: 1;
+    width: 70%;
 }
 
 @media (max-width: 767px) {
+    .content-Renting_body_heading h1 {
+        font-size: 45px;
+    }
+
     .content-Renting_body_heading span {
-        font-size: 25px;
+        font-size: 18px;
+        width: 100%;
     }
 }
 
@@ -2094,9 +2108,7 @@ select.form-control {
     display: block;
 }
 
-.content-service_iten_owner_is {
-    padding: 40px 0px;
-    margin: 0px 200px 120px 200px;
+.test {
     background-color: #fff;
     position: relative;
     top: -260px;
@@ -2124,12 +2136,20 @@ select.form-control {
     align-items: center;
 }
 
-@media (max-width: 767px) {
+.section-plan {
+    padding: 40px 0px 130px 0px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
 
     .content-service_iten_owner,
     .content-service_iten_owner_is {
         padding: 50px 0;
-        margin: 0px 20px 50px 20px;
+        margin: 0px 60px 50px 60px;
     }
 }
 
