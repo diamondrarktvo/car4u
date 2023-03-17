@@ -1165,6 +1165,21 @@ footer .row-1 .owner .language::after {
     }
 }
 
+q {
+    display: inline-block;
+    position: relative;
+}
+
+q::before {
+    content: open-quote;
+    position: absolute;
+    top: -0.4em;
+    left: -0.45em;
+    font-size: 8em;
+    color: grey;
+    opacity: 0.3;
+}
+
 .how-it-work .request {
     display: flex;
     gap: 75px;
