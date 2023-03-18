@@ -86,39 +86,46 @@
     </header>
     
     <section class="container my-5">
-      <h1 class="fw-bold">Contact us</h1>
-      <p style="font-size: 14px; color: grey;">Any question or remarks ? Just write us a message !</p>
+      <h1 style="font-size: 42px; font-weight: 700;">Contact us</h1>
+      <p style="font-size: 18px; color: grey; font-weight: 400;">Any question or remarks ? Just write us a message !</p>
     </section>
 
     <!-- form -->
-    <section class="container my-4">
-      <form>
-        <div class="border border-1 bg-white d-flex flex-lg-row flex-column col-12" style="border-radius: 20px;">
-          <div class="col-lg-5 col-12 d-flex flex-column p-5 m-2" style="background-color: #1996B4; color: #fff; border-radius: 18px;">
+    <section class="container">
+      <form style="margin-top: 64px;">
+        <div class=" bg-white d-flex flex-lg-row flex-column col-12" style="border-radius: 10px; box-shadow: 0px 0px 62.4651px 31.2325px rgba(0, 0, 0, 0.03)">
+          <div class="col-lg-5 col-12 d-flex flex-column p-5 m-2" style="position: relative; background-color: #1996B4; color: #fff; border-radius: 18px;">
             <h3 style="color: #fff;">Contact Information</h3>
-            <p style="font-size: 22px; margin: 38px 0px;">Help us to answer you faster! Specify your problem by filling in the fields below, which will allow us 
+            <p style="font-size: 18px; font-weight: 400; margin: 6pxpx 0px 57px 0px;">Help us to answer you faster! Specify your problem by filling in the fields below, which will allow us 
               to direct your question to the appropriate department. Be precise and if necessary, 
               don't hesitate to attach photocopies of documents to your message.</p>
               <div class="my-4 d-flex flex-row">
                 <img alt="" src="images/phone.png" height="20" width="20" />
-                <p style="margin-left: 20px; font-size: 20px;">+212 65000000</p>
+                <p style="margin-left: 20px; font-size: 16px; font-weight:400;">+212 65000000</p>
               </div>
               <div class="my-4 d-flex flex-row">
                 <img alt="" src="images/mail.png" height="20" width="20" />
-                <p style="margin-left: 20px; font-size: 20px;">Example@gmail.com</p>
+                <p style="margin-left: 20px; font-size: 16px; font-weight:400;">Example@gmail.com</p>
               </div>
               <div class="my-4 d-flex flex-row">
                 <img alt="" src="images/localisation.png" height="20" width="20" />
-                <p style="margin-left: 20px; font-size: 20px;">44 Elmessaha Street Dokki, Giza - Egypt</p>
+                <p style="margin-left: 20px; font-size: 16px; font-weight:400;">44 Elmessaha Street Dokki, Giza - Egypt</p>
               </div>
-              <div class="my-5 col-4 d-flex flex-row justify-content-between">
+              <div class="mt-4 col-4 d-flex flex-row justify-content-around">
                 <img  alt="" src="images/twitter.png" height="40" width="40" style="background-color: #081E23; padding: 8px; border-radius: 60px;" />
                  <img  alt="" src="images/insta.png" height="40" width="40" style="background-color: #fff; padding: 8px; border-radius: 60px;" />
-
+              </div>
+              <div style="position: absolute; bottom: 0; right: 0;">
+                  <div style="position: absolute; bottom: 20px; z-index: 1;">
+                    <img alt="" src="images/round_light.png" height=" 370" width="400"/>
+                  </div>
+                  <div style="position: relative; z-index: 2; right: 27px;">
+                    <img alt="" src="images/round_fonce.png" height="350" width="300"/>
+                  </div>
               </div>
           </div>
 
-          <div class="col-lg-6 col-12 d-flex flex-column p-5 m-2" style="background-color: #fff;">
+          <div class="col-lg-6 col-12 d-flex flex-column p-4" style="background-color: #fff;">
             <div class="row col-12 my-2">
                 <label for="email" class="form-label fw-bold"
                 >Adresse email<span
@@ -171,7 +178,7 @@
                 <label class="form-label fw-bold"
                 >Upload files</label
                 >
-                <label for="fichier" style="color: grey; height: 60px; display: flex; flex-direction: row; justify-content: center; align-items: center; border: 1px solid #ced4da; border-radius: 15px;"><span style="color: #1996B4;">Add a File</span> or Drag and Drop</label>
+                <label for="fichier" style="color: grey; height: 60px; display: flex; flex-direction: row; justify-content: center; align-items: center; border: 1px solid #ced4da; border-radius: 15px; font-size: 16px; font-weight: 400;"><span style="color: #1996B4;">Add a File</span> or Drag and Drop</label>
                 <input
                 style="background-color: #fff; border-radius: 15px; display: none;"
                 id="fichier"
@@ -181,7 +188,7 @@
                 />
             </div>
             <button
-                class="btn py-4 px-5 rounded-0 my-4"
+                class="btn py-4 px-5 rounded-3 my-4"
                 style="background-color: #C3C3C3; color: #fff"
             >
                 Send message

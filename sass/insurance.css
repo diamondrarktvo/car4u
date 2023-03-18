@@ -2018,35 +2018,43 @@ q::before {
     .content-Renting_body {
         display: block;
     }
+    .excpt-careers{
+        margin: 30px 0px;
+    }
 }
+
+.excpt-careers{
+    margin: 30px 70px;
+}
+
 
 .content-Renting_body_picture img {
     border-radius: 300px 0px 0px 0px;
 }
 
-.content-Renting_body_heading {
+.content-Renting_body_heading, .content-Renting_body_heading_career {
     margin-bottom: 35px;
 }
 
-.content-Renting_body_heading h1 {
-    font-size: 50px;
+.content-Renting_body_heading h1, .content-Renting_body_heading_career h1 {
+    font-size: 46px;
     font-weight: bolder;
+    margin-top: 30px;
 }
 
-.content-Renting_body_heading span {
+.content-Renting_body_heading span, .content-Renting_body_heading_career span {
     display: block;
-    margin-top: 25px;
     font-size: 22px;
     line-height: 1;
-    width: 70%;
+    width: 90%;
 }
 
 @media (max-width: 767px) {
-    .content-Renting_body_heading h1 {
+    .content-Renting_body_heading h1, .content-Renting_body_heading_career h1 {
         font-size: 45px;
     }
 
-    .content-Renting_body_heading span {
+    .content-Renting_body_heading span, .content-Renting_body_heading_career span {
         font-size: 18px;
         width: 100%;
     }
