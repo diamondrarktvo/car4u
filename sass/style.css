@@ -1692,7 +1692,7 @@ footer .row-1 .owner .language::after {
   margin-bottom: 134px;
 }
 
-.reviews-section .list-reviews .col-1 a {
+.reviews-section .list-reviews .col-1 button {
   align-self: end;
 }
 
@@ -1702,7 +1702,7 @@ footer .row-1 .owner .language::after {
   }
 }
 
-.reviews-section .list-reviews .col-3 a {
+.reviews-section .list-reviews .col-3 button {
   align-self: start;
 }
 
@@ -1723,7 +1723,7 @@ footer .row-1 .owner .language::after {
   margin-bottom: 5px;
 }
 
-.reviews-section .list-reviews .col a {
+.reviews-section .list-reviews .col button {
   text-decoration: none;
   padding: 16px;
   color: white;
@@ -1732,13 +1732,14 @@ footer .row-1 .owner .language::after {
   font-size: 14px;
   line-height: 26px;
   background: #1996B4;
+  border: none;
 }
 
-.reviews-section .list-reviews .col a .fa-chevron-left {
+.reviews-section .list-reviews .col button .fa-chevron-left {
   margin-right: 24px;
 }
 
-.reviews-section .list-reviews .col a .fa-chevron-right {
+.reviews-section .list-reviews .col button .fa-chevron-right {
   margin-left: 24px;
 }
 
@@ -1750,8 +1751,29 @@ footer .row-1 .owner .language::after {
   zoom: 1.02;
 }
 
+.reviews-section .list-reviews .col-1 .cont-img, .reviews-section .list-reviews .col-3 .cont-img{
+  position: relative;
+  margin-top: 80px;
+}
+
+.reviews-section .list-reviews .col-1 .cont-img img, .reviews-section .list-reviews .col-3 .cont-img img{
+  height: 300px;
+  width: 200px;
+}
+
+ .cont-img .test-bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1996B4;
+  opacity: 0.8;
+}
+
 .reviews-section .list-reviews .col-2 img {
-  max-width: 334px;
+  width: 334px;
+  height: 500px;
 }
 
 .reviews-section .list-reviews .col-2 .message p {

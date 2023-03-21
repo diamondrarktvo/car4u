@@ -429,11 +429,14 @@
 
       <div class="list-reviews">
         <div class="col-1 col">
-          <img src="images\our-client-2.jpg" alt="" />
-          <a href="#"><i class="fa-solid fa-chevron-left"></i> Previous</a>
+          <div class="cont-img">
+            <div class="test-bg"></div>
+            <img id="img_prec" src="images/our-client-2.png" alt="" />
+          </div>
+          <button id="prev_button"><i class="fa-solid fa-chevron-left"></i> Previous</button>
         </div>
         <div class="col-2">
-          <img src="images\our-client-1.jpg" alt="" />
+          <img id="img_principale" src="images\our-client-1.png" alt="" />
           <div class="message">
             <p>
               Lorem ipsum dolor sit amet consectetur. Massa sed dapibus
@@ -442,13 +445,16 @@
               molestie diam. Netus arcu varius lectus dignissim mollis lorem
               pulvinar tortor arcu.
             </p>
-            <h4>Chaimae Mouataz</h4>
-            <h5>Global Accountability Officer</h5>
+            <h4 id="nom_reviewer">Chaimae Mouataz</h4>
+            <h5 id="function_reviewer">Global Accountability Officer</h5>
           </div>
         </div>
         <div class="col-3 col">
-          <img src="images\our-client-3.jpg" alt="" />
-          <a href="#">Next <i class="fa-solid fa-chevron-right"></i></a>
+          <div class="cont-img">
+            <div class="test-bg"></div>
+            <img id="img_suiv" src="images\our-client-3.png" alt="" />
+          </div>
+          <button id="next_button">Next <i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </section>
@@ -582,5 +588,69 @@
     <script src="js/pagescroll.js"></script>
     <script src="js/css3-animate-it.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        let imageNumber = 1;
+        let numberSuiv = 0;
+        let numberPrec = 0;
+        let indexViewer = 0;
+        let name_reviewer = [
+          "Chaimae Mouataz", "George Mirton", "Garou belzo"
+        ]
+        let fonction_reviewer = ["Global Accountability Officer", "Developper Java", "Policier"]
+        function animateSlider(situation){
+          let fullPathnameImage = "images/our-client";
+          let numberCurrent = 0;
+          
+          if(situation === "next"){
+            if(imageNumber > 0 && imageNumber <=3){
+              if(imageNumber === 3){
+                imageNumber = 0;
+              }
+              if(indexViewer === 2){
+                indexViewer = -1;
+              }
+              imageNumber+=1;
+              indexViewer+=1;
+              numberCurrent = imageNumber;
+              numberSuiv = numberCurrent === 3 ? 1 : numberCurrent + 1;
+              numberPrec = numberCurrent === 1 ? 3 : numberCurrent - 1;
+              $("#img_principale").prop("src", `${fullPathnameImage}-${numberCurrent}.png`);
+              $("#img_prec").prop("src", `${fullPathnameImage}-${numberPrec}.png`);
+              $("#img_suiv").prop("src", `${fullPathnameImage}-${numberSuiv}.png`);
+              $("#nom_reviewer").text(name_reviewer[indexViewer]);
+              $("#function_reviewer").text(fonction_reviewer[indexViewer]);
+            }
+          }
+          if (situation === "prec"){
+            if(imageNumber > 0 && imageNumber <=3){
+              if(imageNumber === 1){
+                imageNumber = 4;
+              }
+              if(indexViewer === 0){
+                indexViewer = 3;
+              }
+              imageNumber-=1;
+              indexViewer-=1;
+              numberCurrent = imageNumber;
+              numberSuiv = numberCurrent === 3 ? 1 : numberCurrent + 1;
+              numberPrec = numberCurrent === 1 ? 3 : numberCurrent - 1;
+              $("#img_principale").prop("src", `${fullPathnameImage}-${numberCurrent}.png`);
+              $("#img_prec").prop("src", `${fullPathnameImage}-${numberPrec}.png`);
+              $("#img_suiv").prop("src", `${fullPathnameImage}-${numberSuiv}.png`);
+              $("#nom_reviewer").text(name_reviewer[indexViewer]);
+              $("#function_reviewer").text(fonction_reviewer[indexViewer]);
+            }
+          }
+          console.log(" current : ", numberCurrent)
+          console.log(" indexViewer : ", indexViewer)
+        }
+
+        $("#next_button").click(() => {
+          animateSlider("next");
+        });
+        $("#prev_button").click(() => {
+          animateSlider("prec");
+        });
+    </script>
   </body>
 </html>
