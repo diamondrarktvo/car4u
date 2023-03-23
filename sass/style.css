@@ -1316,9 +1316,23 @@ footer .row-1 .owner .language::after {
   max-width: 409px;
 }
 
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 424px) {
   .why-us .right-why-us .why-us-right .hr img {
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .why-us .right-why-us .why-us-right .hr img {
+    width: calc(100% - 50px);
+   margin-bottom: 52px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .why-us .right-why-us .why-us-right .hr img {
+   display: none;
   }
 }
 
