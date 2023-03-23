@@ -82,23 +82,23 @@
         </div>
         <div class="content-step-box">
             <div class="content-step-box_step">
-                <div class="content-step-box_step_box">
+                <div class="content-step-box_step_box active">
                     <span class="content-step-box_step_box_num">1</span>
                     <span class="content-step-box_step_box_tex">Basic information</span>
                 </div>
-                <div class="content-step-box_step_box">
+                <div class="content-step-box_step_box active">
                     <span class="content-step-box_step_box_num">2</span>
                     <span class="content-step-box_step_box_tex">Insurance info</span>
                 </div>
-                <div class="content-step-box_step_box">
+                <div class="content-step-box_step_box active">
                     <span class="content-step-box_step_box_num">3</span>
                     <span class="content-step-box_step_box_tex">Address</span>
                 </div>
-                <div class="content-step-box_step_box">
+                <div class="content-step-box_step_box active">
                     <span class="content-step-box_step_box_num">4</span>
                     <span class="content-step-box_step_box_tex">Description</span>
                 </div>
-                <div class="content-step-box_step_box">
+                <div class="content-step-box_step_box active">
                     <span class="content-step-box_step_box_num">5</span>
                     <span class="content-step-box_step_box_tex">Calendar</span>
                 </div>
@@ -124,40 +124,104 @@
                             <label for="">Price per day (excluding km)</label>
                             <div class="number border-primary">
                                 <span class="minus">-</span>
-                                <input type="text" value="300 EGP"/>
+                                <input type="text" value="300 EGP" style="height: 48px"/>
                                 <span class="plus">+</span>
                             </div>
-                            <div class="content-step-6-box-month">
-                                <input type="text" placeholder="Do you provide a discount ?">
-                                <select name="" id="">
-                                    <option value="">Per month</option>
-                                </select>
+                            <label for="" style="margin: 14px 0px 14px 0px;">Discount <span style="color: grey; font-weight: lighter;">(optionnal)</span></label>
+                            <div style="background: rgba(0, 0, 0, 0.03); padding: 6px 24px;">
+                                <div style="display: flex; flex-direction: row; height: 20px; margin-bottom: 10px;">
+                                    <input type="checkbox"  name="perweek" style="flex: 0; margin-top: 2px;"/><label for="perweek" style="flex: 3; margin-left: 8px;"> Per week</label>
+                                </div>
+                                <div class="numberPourc border-primary" style="margin-left: 20px;">
+                                    <input type="text" value="10" style="height: 48px;"/>
+                                    <span class="plus">%</span>
+                                </div>
+                                <div style="display: flex; flex-direction: row; height: 20px; margin-bottom: 10px;">
+                                    <input type="checkbox"  name="perweek" style="flex: 0; margin-top: 2px;"/><label for="perweek" style="flex: 3; margin-left: 8px; font-weight: lighter;"> Per month</label>
+                                </div>
                             </div>
-                            <span class="comm">+ Commission </span>
+                            <span class="comm" style="margin: 24px 0px 0px 0px;">+ Commission </span>
                             <p class="total">Total = <span>500 EGP</span></p>
                         </div>
                         <div>
                             <div class="form-group box-200-km">
                                 <label for="inputState">Package of km</label>
                                 <select id="inputState" class="form-controls border-primary">
-                                    <option selected>200 km -300 km</option>
-                                    <option>100 km -300 km</option>
+                                    <option selected >300 km</option>
+                                    <option>400 km</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="inputState">Price for Package : 200- 300km</label>
-                                <input type="text" placeholder="300 EGP" class="text-center">
+                                <label for="inputState" style="margin: 14px 0px 14px 0px;">Price for Package : 300km</label>
+                                <input type="text" value="300 EGP" class="text-center">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputState" style="margin: 14px 0px 14px 0px;">Allow the purchase of additional km ?</label>
+                                <div class="radio-buttons">
+                                    <label>
+                                      <input type="radio" name="option" value="yes">
+                                      Yes
+                                    </label>
+                                    <label>
+                                      <input type="radio" name="option" value="no">
+                                      No
+                                    </label>
+                                  </div>
                             </div>
                         </div>
                     </div>
                     <div class="formRow">
-                        <div>
-                          <input type="text" placeholder="Click here to return to the current price : 300 EGP">
-                        </div>
-                        <div>
-                          <input type="text" placeholder="Click here to return to the current price : 300 EGP">
+                        <div style="background-color: #F5F5F5; padding: 20px 30px;">
+                          <button type="text" style="font-size: 12px; font-weight: 500; color: black;">Click here to return to the current price : 300 EGP</button>
                         </div>
                       </div>
+                    <div class="table-step-6">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th colspan="7">Tarifs d'une location de voiture par kilomètre</th>
+                              </tr>
+                              <tr>
+                                <th>#</th>
+                                <th>Type de forfait</th>
+                                <th>Pourcentage</th>
+                                <th>Eco car (400 EGP)</th>
+                                <th>MID car (700 EGP)</th>
+                                <th>SUV car (1000 EGP)</th>
+                                <th>Luxury car</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="index-tb">1</td>
+                                <td>300 KM</td>
+                                <td>0.35%</td>
+                                <td>420</td>
+                                <td>735</td>
+                                <td>1050</td>
+                                <td>2100</td>
+                              </tr>
+                              <tr>
+                                <td class="index-tb">2</td>
+                                <td>500 KM</td>
+                                <td>0.27%</td>
+                                <td>540</td>
+                                <td>945</td>
+                                <td>1350</td>
+                                <td>2700</td>
+                              </tr>
+                              <tr>
+                                <td class="index-tb">3</td>
+                                <td>600 KM</td>
+                                <td>0.28%</td>
+                                <td>540</td>
+                                <td>245</td>
+                                <td>1350</td>
+                                <td>2700</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
                     <div class="content-step-nav">
                         <a href="step-5.html" class="btn-primary back">Previous</a>
                         <a href="manage-listing.html" class="btn-primary">Publish my deposit</a>
